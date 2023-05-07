@@ -1,0 +1,131 @@
+  {
+      "carousel": [
+
+          {
+              "url": "images/website-1.jpg",
+              "caption": "website-portfolio-img"
+          },
+          {
+              "url": "images/website-2.jpg",
+              "caption": "website-portfolio-img"
+          },
+          {
+              "url": "images/website-3.jpg",
+              "caption": "website-portfolio-img"
+          },
+          {
+              "url": "images/website-4.jpg",
+              "caption": "website-portfolio-img"
+          },
+          {
+              "url": "images/website-5.jpg",
+              "caption": "website-portfolio-img"
+          },
+          {
+              "url": "images/website-6.jpg",
+              "caption": "website-portfolio-img"
+          },
+          {
+              "url": "images/website-7.jpg",
+              "caption": "website-portfolio-img"
+          },
+          {
+              "url": "images/website-8.jpg",
+              "caption": "website-portfolio-img"
+          },
+          {
+              "url": "images/website-9.jpg",
+              "caption": "website-portfolio-img"
+          },
+          {
+              "url": "images/website-10.jpg",
+              "caption": "website-portfolio-img"
+          },
+          {
+              "url": "images/website-11.jpg",
+              "caption": "website-portfolio-img"
+          },
+          {
+              "url": "images/website-12.jpg",
+              "caption": "website-portfolio-img"
+          },
+          {
+              "url": "images/website-13.jpg",
+              "caption": "website-portfolio-img"
+          },
+          {
+              "url": "images/website-14.jpg",
+              "caption": "website-portfolio-img"
+          },
+          {
+              "url": "images/website-15.jpg",
+              "caption": "website-portfolio-img"
+          }
+      ],
+
+      "service": [{
+              "url": "images/service-img(1).svg",
+              "title": "Front-End",
+              "caption": "service-img",
+              "text": "HTML, CSS, SCSS, SASS, Bootstrap, BEM, Gulp,  JavaScript, Jquery, React, Reduxz",
+              "link": "Contact..."
+          },
+          {
+              "url": "images/service-img(2).svg",
+              "title": "Backend",
+              "caption": "service-img",
+              "text": "I offer you to do Backend of your Website, Games and Apps",
+              "link": "Contact..."
+          },
+          {
+              "url": "images/service-img(3).svg",
+              "title": "SMM",
+              "caption": "service-img",
+              "text": "Social media marketing of your business",
+              "link": "Contact..."
+          },
+          {
+              "url": "images/service-img(4).png",
+              "title": "Logo-Creating",
+              "caption": "service-img",
+              "text": "Logo Creating and making Logo Animation with specific programs ",
+              "link": "Contact..."
+          },
+          {
+              "url": "images/service-img(5).png",
+              "title": "Video Montaging",
+              "caption": "service-img",
+              "text": "High level of Video Montaging with After Effects and Premiere Pro",
+              "link": "Contact..."
+          },
+          {
+              "url": "images/service-img(6).svg",
+              "title": "Web-Designing",
+              "caption": "service-img",
+              "text": "Web Designing with UX UI",
+              "link": "Contact..."
+          },
+          {
+              "url": "images/service-img(7).png",
+              "title": "Graphic Design",
+              "caption": "service-img",
+              "text": "Graphic Design Posts for your ptoject.(Photoshop, FIGMA)",
+              "link": "Contact..."
+          },
+          {
+              "url": "images/service-img(8).png",
+              "title": "Security",
+              "caption": "service-img",
+              "text": "Security of your company`s computer system (cyber security)",
+              "link": "Contact..."
+          },
+          {
+              "url": "images/service-img(9).svg",
+              "title": "Camera Installition",
+              "caption": "service-img",
+              "text": "Camera and Video problems (installition, changing , Archive help",
+              "link": "Contact..."
+          }
+
+      ]
+  }
