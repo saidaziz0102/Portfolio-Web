@@ -922,7 +922,7 @@ li {
 
   .burger--active span {
     transition: all .5s ease-in-out;
-    background-color: rgb(205, 19, 19);
+
     box-shadow: 0 0 20px white;
   }
 
@@ -1019,9 +1019,13 @@ li {
     min-width: 470px;
   }
 
+
   .header {
     padding-bottom: 85px;
     position: relative;
+  }
+  .header__top-inner{
+    justify-content: space-between;
   }
 
   .header__list--active {
@@ -1049,16 +1053,21 @@ li {
 
   .header__social-inner {
     position: absolute;
-    top: 55px;
-    left: -150px;
+    top: 100%;
+    right: -20px;
     background: rgba(7, 31, 45, 0.5);
-    padding: 25px 15px 0;
+    padding: 25px 20px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     transform: scale(0);
+    flex-direction: column;
+    gap: 30px;
 
   }
-
+  .header__social-inner a{
+    transform: scale(1.2);
+    padding: 10px 20px;
+  }
   .header__social--active {
     transform: scale(1);
     animation: helloList 1s linear ease-in;
@@ -1187,32 +1196,40 @@ li {
   }
 
   .header {
-    padding: 0 0 125px 0;
+    padding: 0 ;
   }
 
-  .header__logo span {
+  .header__logo {
     display: none;
+  }
+  .header__logo img{
+    max-width: 50px;
   }
 
   .header__list--active {
     top: 100px;
-    flex-wrap: wrap;
     z-index: 1 !important;
-    /* left: 0; */
+    gap: 10px;
+    padding: 10px;
   }
 
   .header__list-link {
-    min-width: 30%;
-    padding: 0;
+    padding: 5px 10px;
+    font-size: 25px;
   }
 
-  .header__social-inner {
-    /* left: -100%; */
-    padding: 20px 0;
+  .header__social-inner{
+    right: -15px;
+  }
+
+
+  .header__video{
+    transform: s;
   }
 
   .header__content {
     padding-top: 80px;
+
   }
 
   .burger {
@@ -1226,12 +1243,40 @@ li {
   .header__video {
     max-width: 90%;
   }
-
+  .service{
+    padding-top: 110px;
+  }
+  .service__item{
+    padding: 25px 10px;
+  }
   .about__item {
     max-width: 80%;
+    height: 100%;
   }
 
-
+  .service__item a{
+    margin-top: 20px;
+  }
+  .active-popup{
+    max-height: 60%;
+  }
+  .skills{
+    padding-top: 110px;
+  }
+  .skills__wrapper{
+    gap: 50px;
+    max-width: 100%;
+  }
+  .skills__item{
+    max-width: 80%;
+  }
+  .portfolio{
+    padding-top: 110px;
+  }
+.portfolio__wrapper{
+  padding: 5px;
+  transform: scale(1.1);
+}
   .footer__contact a {
     font-size: 16px;
   }
