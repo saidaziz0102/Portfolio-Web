@@ -1,34 +1,37 @@
 'use strict';
 window.addEventListener('DOMContentLoaded', () => {
    
-//    burger
+    // burger
 
     const burger = document.querySelector('.burger'),
-    list = document.querySelector('.header__list'),
-    socialBurger = document.querySelector('.social_burger i'),
-    socialInner = document.querySelector('.header__social-inner');
+        list = document.querySelector('.header__list'),
+        socialBurger = document.querySelector('.social_burger i'),
+        socialInner = document.querySelector('.header__social-inner');
     let h = true;
-    
-    
-    
+
+
+
     burger.addEventListener('click', () => {
-    if (h === true) {
-        burger.classList.toggle('burger--active'),
-            list.classList.toggle('header__list--active')
-    }
-    });
-    
-    socialBurger.addEventListener('click', () => {
-    {
-        socialBurger.classList.toggle('fa-toggle-on');
-    
-        if (socialBurger.classList.contains('fa-toggle-off')) {
-            socialInner.classList.toggle('header__social--active');
+        if (h === true) {
+               burger.classList.toggle('burger--active');
+                list.classList.toggle('header__list--active');
+                socialInner.classList.remove('header__social--active');
+                socialBurger.classList.remove('fa-toggle-on');
         }
-    
-    }
     });
 
+    socialBurger.addEventListener('click', () => {
+        {
+            socialBurger.classList.toggle('fa-toggle-on');
+            if (socialBurger.classList.contains('fa-toggle-off')) {
+                socialInner.classList.toggle('header__social--active');
+                list.classList.remove('header__list--active');
+                burger.classList.remove('burger--active');
+
+            }
+
+        }
+    })
 
     // carousel
     

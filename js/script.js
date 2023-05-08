@@ -13,17 +13,21 @@ window.addEventListener('DOMContentLoaded', () => {
 
     burger.addEventListener('click', () => {
         if (h === true) {
-            burger.classList.toggle('burger--active'),
-                list.classList.toggle('header__list--active')
+               burger.classList.toggle('burger--active');
+                list.classList.toggle('header__list--active');
+                socialInner.classList.remove('header__social--active');
+                socialBurger.classList.remove('fa-toggle-on');
         }
     });
 
     socialBurger.addEventListener('click', () => {
         {
             socialBurger.classList.toggle('fa-toggle-on');
-
             if (socialBurger.classList.contains('fa-toggle-off')) {
                 socialInner.classList.toggle('header__social--active');
+                list.classList.remove('header__list--active');
+                burger.classList.remove('burger--active');
+
             }
 
         }

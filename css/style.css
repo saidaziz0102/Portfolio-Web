@@ -845,12 +845,12 @@ li {
     min-width: 750px;
   }
 
-  .header {
+  .header__top {
     position: relative;
   }
 
   .header__top-inner {
-    padding-top: 80px;
+    padding-top: 50px;
     justify-content: space-around;
   }
 
@@ -867,11 +867,14 @@ li {
 
   .header__list {
     position: absolute;
-    left: 0;
-    top: -100%;
-    padding: 20px 0;
+    top: 100%;
+    right: 0%;
+    transform: translateX(-1000%);
+    padding: 22px 0;
     background: rgba(7, 31, 45, 0.5);
     justify-content: center;
+    transition: .3s ease-in;
+    flex-wrap: wrap;
   }
 
   .header__list-link {
@@ -881,9 +884,13 @@ li {
   }
 
   .header__list--active {
-    top: 0;
-    width: 100%;
+    transform: scale(1);
+    top: 100%;
+    left: -10%;
     background: rgba(7, 31, 45, 0.5);
+    padding: 30px 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
 
   .burger {
@@ -941,7 +948,7 @@ li {
   }
 
   .header__content {
-    padding-top: 80px;
+    padding-top: 100px;
     padding-bottom: 30px;
   }
 
@@ -1016,22 +1023,31 @@ li {
 
 @media (max-width:769px) {
   .container {
-    min-width: 470px;
+    min-width: 460px;
   }
 
 
   .header {
-    padding-bottom: 85px;
+    padding-bottom: 20%;
+  }
+
+  .header__top {
     position: relative;
   }
-  .header__top-inner{
+
+  .header__top-inner {
     justify-content: space-between;
+  }
+
+  .header__list {
+    gap: 10px;
   }
 
   .header__list--active {
     flex-wrap: wrap;
     z-index: 1 !important;
     left: 0;
+    padding: 32px 0px;
   }
 
 
@@ -1054,38 +1070,24 @@ li {
   .header__social-inner {
     position: absolute;
     top: 100%;
-    right: -20px;
+    right: 0;
     background: rgba(7, 31, 45, 0.5);
-    padding: 25px 20px;
+    padding: 30px 20px 0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    transform: scale(0);
-    flex-direction: column;
-    gap: 30px;
+    transform: translateY(-1000%);
+    justify-content: space-around;
+    transition: .3s ease-in;
 
   }
-  .header__social-inner a{
-    transform: scale(1.2);
+
+  .header__social-inner a {
+    transform: scale(1.1);
     padding: 10px 20px;
   }
+
   .header__social--active {
-    transform: scale(1);
-    animation: helloList 1s linear ease-in;
-
-  }
-
-  @keyframes helloList {
-    50% {
-      transform: scale(0.5);
-    }
-
-    75% {
-      transform: scale(1.1);
-    }
-
-    100% {
-      transform: scale(1);
-    }
+    transform: translateY(0);
   }
 
   .header__social-link {
@@ -1093,7 +1095,7 @@ li {
   }
 
   .header__content {
-    padding-top: 80px;
+    padding-top: 100px;
   }
 
   .header__inner {
@@ -1196,13 +1198,14 @@ li {
   }
 
   .header {
-    padding: 0 ;
+    padding: 0;
   }
 
   .header__logo {
     display: none;
   }
-  .header__logo img{
+
+  .header__logo img {
     max-width: 50px;
   }
 
@@ -1218,12 +1221,14 @@ li {
     font-size: 25px;
   }
 
-  .header__social-inner{
-    right: -15px;
+  .header__social-inner {
+    padding-bottom: 10px;
+    left: 0;
+    gap: 30px;
   }
 
 
-  .header__video{
+  .header__video {
     transform: s;
   }
 
@@ -1243,40 +1248,50 @@ li {
   .header__video {
     max-width: 90%;
   }
-  .service{
+
+  .service {
     padding-top: 110px;
   }
-  .service__item{
+
+  .service__item {
     padding: 25px 10px;
   }
+
   .about__item {
     max-width: 80%;
     height: 100%;
   }
 
-  .service__item a{
+  .service__item a {
     margin-top: 20px;
   }
-  .active-popup{
+
+  .active-popup {
     max-height: 60%;
   }
-  .skills{
+
+  .skills {
     padding-top: 110px;
   }
-  .skills__wrapper{
+
+  .skills__wrapper {
     gap: 50px;
     max-width: 100%;
   }
-  .skills__item{
+
+  .skills__item {
     max-width: 80%;
   }
-  .portfolio{
+
+  .portfolio {
     padding-top: 110px;
   }
-.portfolio__wrapper{
-  padding: 5px;
-  transform: scale(1.1);
-}
+
+  .portfolio__wrapper {
+    padding: 5px;
+    transform: scale(1.1);
+  }
+
   .footer__contact a {
     font-size: 16px;
   }
