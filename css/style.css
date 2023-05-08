@@ -1229,7 +1229,7 @@ li {
   .header__list-link {
     padding: 5px 10px;
     font-size: 16px;
-
+   transform: scale(1.1);
   }
 
   .header__social-inner {
